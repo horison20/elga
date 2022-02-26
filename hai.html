@@ -1,0 +1,24 @@
+<html>
+  <body>
+   <center>
+   <content="top">
+    <h1>Hai Cantik!</h1>
+    <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" />
+    <h1>Kangen aku ngak??</h1>
+   <button id="btn_iya" onclick="alert('I LOVE YOU')">Iya </button>&nbsp;&nbsp;
+   <button id="btn_enggak" onclick="enggak(this)" style="position: absolute">
+      Enggak
+	</button>
+	</center>
+	</content>
+  </body>
+  <script>
+    function enggak(id) {
+      var iya = document.getElementById("btn_iya");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + iya.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
